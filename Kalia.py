@@ -34,7 +34,7 @@ ADMIN_FILE = 'admin_data.json'
 last_attack_times = {}
 COOLDOWN_MINUTES = 3
 attack_in_progress = False  # Track if an attack is running
-ALLOWED_GROUP_ID = {}  # Replace with your actual group ID
+ALLOWED_GROUP_ID = -1002206843856  # Replace with your actual group ID
 
 # Helper function to check if the message is from the allowed group
 def is_allowed_group(chat_id):
