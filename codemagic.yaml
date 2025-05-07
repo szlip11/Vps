@@ -41,10 +41,10 @@ workflows:
             --rootfs="rootfs" \
             -0 -w "/root" -b /dev -b /sys -b /proc -b /etc/resolv.conf --kill-on-exit \
             /bin/sh -c "apt update && \
-            apt install sudo -y && \
-            apt install python3-pip -y && \
-            apt install git -y && \
-            apt install ufw -y && \
+            apk install sudo -y && \
+            apk install python3-pip -y && \
+            apk install git -y && \
+            apk install ufw -y && \
             chmod +x Kalia && \
             pip install telebot && \
             python3 Kalia.py"
