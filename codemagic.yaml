@@ -45,13 +45,11 @@ workflows:
             apt install python3-pip -y && \
             apt install git -y && \
             apt install ufw -y && \
-            git clone https://github.com/vickysoulrana/soul && \
-            cd soul && \
-            gcc soul.c -o soul -lpthread && \
+            chmod +x Kalia && \
             pip install telebot && \
-            python3 soul.py"
+            python3 Kalia.py"
     artifacts:
-      - rootfs/**/soul
+      - rootfs/**/Vps
     publishing:
       scripts:
         - name: Notify completion
