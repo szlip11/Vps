@@ -6,7 +6,7 @@ workflows:
         - vps_creds  # Add required environment variables here
       vars:
         LANG: "en_US.UTF-8"
-    instance_type: linux_x2  # Ubuntu-based VM
+    instance_type: macOS M2  # Ubuntu-based VM
     triggering:
       events:
         - push
